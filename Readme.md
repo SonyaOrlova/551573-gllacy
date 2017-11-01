@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Sonya](https://up.htmlacademy.ru/htmlcss/19/user/551573).
-* Наставник: Алексей Жуваров.
+* Наставник: Алексей Жуваров https://htmlacademy.ru/profile/id85076.
 
 ---
 
