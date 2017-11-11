@@ -40,6 +40,7 @@
 					<a href="#">Поиск</a>
 					<div class="search_form">
 						<form action="#" method="post">
+							<label for="search" class="visually-hidden">Поиск по сайту</label>
 							<input type="search" id="search" name="search" placeholder="Что ищем?">
 						</form>
 					</div>
@@ -48,19 +49,31 @@
 				<li class="enter_element">
 					<a href="#">Вход</a>
 					<div class="authorization_form">
+
 						<form action="#" method="post">
-							<input type="email" id="email_1" name="email_1" placeholder="Электронная почта">
-							<input type="password" id="password" name="password" placeholder="Пароль">
-							<button class="btn_standart"> Войти </button>
+							<fieldset class="authorization">
+								<legend class="visually-hidden">Форма входа</legend>
+
+								<label for="authorization_email" class="visually-hidden">Электронная почта</label>
+								<input type="email" id="authorization_email" name="authorization_email" placeholder="Электронная почта">
+
+								<label for="password" class="visually-hidden">Пароль</label>
+								<input type="password" id="password" name="password" placeholder="Пароль">
+
+								<button type="submit" class="btn_standart">Войти</button>
+
+							</fieldset>
 						</form>
+
 						<div class="help_links">
 							<a href="#">Забыли пароль?</a>
 							<a href="#">Новая регистрация</a>
 						</div>
+
 					</div>
 				</li>
 
-				<li class="basket_element"><a href="#">Пусто</a></li>
+				<li class="basket_element"><a href="#" aria-label="Корзина покупок">Пусто</a></li>
 
 			</ul>
 
@@ -68,7 +81,7 @@
 
 		<div class="header_contacts">
 			<p class="header_worktime">С 10 до 20, ежедневно</p>
-			<p class="header_phone">8 812 450-25-25</p>
+			<a class="header_phone" href="tel:88124502525" aria-label="Номер телефона:">8 812 450-25-25</a>
 		</div>
 
 	</header>
@@ -83,22 +96,22 @@
 			-->
 
 			<div class="slider_controls">
-				<label  for="slider_btn_1"></label>
-				<label  for="slider_btn_2"></label>
-				<label  for="slider_btn_3"></label>
+				<label  for="slider_btn_1">Посмотреть слайд 1</label>
+				<label  for="slider_btn_2">Посмотреть слайд 2</label>
+				<label  for="slider_btn_3">Посмотреть слайд 3</label>
 			</div>
 
 			<div class="slide slide_1">
 				<p>Крем-брюле и пломбир с малиновым джемом</p>
-				<a class="btn_big" href="#">Давайте оба</a>
+				<button type="button" class="btn_big">Давайте оба!</button>
 			</div>
 			<div class="slide slide_2">
 				<p>Шоколадный пломбир и лимонный сорбет</p>
-				<a class="btn_big" href="#">Давайте оба</a>
+				<button type="button" class="btn_big">Давайте оба!</button>
 			</div>
 			<div class="slide slide_3">
 				<p>Пломбир с помадкой и клубничный щербет</p>
-				<a class="btn_big" href="#">Давайте оба</a>
+				<button type="button" class="btn_big">Давайте оба!</button>
 			</div>
 
 		</div>
@@ -110,13 +123,13 @@
 			<div class="promo_item promo_raspberry">
 				<p class="promo_item_title">Малинка даром!</p>
 				<p class="promo_description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p> 
-				<a class="btn_standart" href="#">Хочу варенье!</a>
+				<button type="button" class="btn_standart">Хочу варенье!</button>
 			</div>
 
 			<div class="promo_item promo_chocolate">
 				<p class="promo_item_title">Шоколадки даром!</p>
 				<p class="promo_description">При покупке 2 кг пломбира, добавим в ваш упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-				<a class="btn_standart" href="#">Хочу шоколадки!</a>
+				<button type="button" class="btn_standart">Хочу шоколадки!</button>
 			</div>
 
 		</section>
@@ -126,39 +139,45 @@
 			<h2 class="visually_hidden">Хиты</h2>
 
 			<ul class="hits_list">
+
 				<li class="item_card hits_product"> 
-					<a href="#">
-						<img src="img/hit1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-						<p class="item_price"><span>310₽</span>/кг</p>
+					<a href="#" aria-label="Первый хит:">
+						<img src="img/hit1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+						<p class="item_price"><span class="rate">310</span><span class="ruble">рублей</span>/кг</p>
 						<h3 class="item_title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
 					</a>
-					<a class="btn_standart" href="#">Быстрый просмотр</a>
+					<button type="button" class="btn_standart">Быстрый просмотр</button>
 				</li>
+
 				<li class="item_card hits_product"> 
-					<a href="#">
-						<img src="img/hit2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-						<p class="item_price"><span>380₽</span>/кг</p>
+					<a href="#" aria-label="Второй хит:">
+						<img src="img/hit2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+						<p class="item_price"><span class="rate">380</span><span class="ruble">рублей</span>/кг</p>
 						<h3 class="item_title">Сливочно-кофейное с кусочками шоколада</h3>
 					</a>
-					<a class="btn_standart" href="#">Быстрый просмотр</a>
+					<button type="button" class="btn_standart">Быстрый просмотр</button>
 				</li>
+
 				<li class="item_card hits_product"> 
-					<a href="#">
-						<img src="img/hit3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-						<p class="item_price"><span>355₽</span>/кг</p>
+					<a href="#" aria-label="Третий хит:">
+						<img src="img/hit3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+						<p class="item_price"><span class="rate">355</span><span class="ruble">рублей</span>/кг</p>
 						<h3 class="item_title">Сливочно-клубничное с присыпкой из белого шоколада</h3>
 					</a>
-					<a class="btn_standart" href="#">Быстрый просмотр</a>
+					<button type="button" class="btn_standart">Быстрый просмотр</button>
 				</li>
+
 				<li class="item_card hits_product"> 
-					<a href="#">
-						<img ssrc="img/hit4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-						<p class="item_price"><span>415₽</span>/кг</p>
+					<a href="#" aria-label="Четвертый хит:">
+						<img src="img/hit4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+						<p class="item_price"><span class="rate">415</span><span class="ruble">рублей</span>/кг</p>
 						<h3 class="item_title">Сливочное крем-брюле с карамельной подливкой</h3>
 					</a>
-					<a class="btn_standart" href="#">Быстрый просмотр</a>
+					<button type="button" class="btn_standart">Быстрый просмотр</button>
 				</li>
+
 			</ul>
+			
 		</section>
 
 		<article class="company" id="company">
@@ -185,8 +204,9 @@
 				<h3 class="visually_hidden">Рассылка</h3>
 				<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 				<form class="mailing_form" action="#" method="post">
-					<input type="email" id="email_2" name="email_2" placeholder="Электронная почта">
-					<button class="btn standart">Отправить</button>
+					<label for="mailing_email" class="visually-hidden">Электронная почта</label>
+					<input type="email" id="mailing_email" name="mailing_email" placeholder="Электронная почта">
+					<button type="submit" class="btn standart">Отправить</button>
 				</form>
 			</div>
 
@@ -197,7 +217,7 @@
 			<h2 class="visually_hidden">Карта и контакты</h2>
 
 			<div class="map_canvas">
-				<img src="img/map.jpg" width="1200" height="640" alt="Карта города">
+				<img src="img/map.jpg" width="1200" height="640" alt="Адрес магазина на карте: ул. Большая Конюшенная 19/8, Санкт-Петербург">
 				<img src="img/pin.svg" width="80" height="140" alt="Метка адреса магазина на карте">
 			</div>
 
@@ -207,19 +227,29 @@
 				<p>Для заказов по телефону:</p>
 				<p class="main_phone">8 812 450-25-25</p>
 				<p>(с 10 до 20 ежедневно)</p>
-				<a href="#" class="button">Форма обратной связи</a>
+				<button type="button" class="btn_standart">Форма обратной связи</button>>
 			</div>
 
 			<div class="feedback_form">
 				<p>Мы обязательно вам ответим!</p>
+
 				<form action="#" method="post">
-					<input type="text" id="name_1" name="name_1" placeholder="Как вас зовут?">
-					<input type="email" id="email_3" name="email_3" placeholder="Ваша почта для ответа">
-					<textarea id="comment" name="comment" rows="5" cols="100" placeholder="Напишите что-нибудь..."></textarea> 
-					<button class="btn_standart">Отправить</button>
+					<fieldset class="feedback">
+						<legend class="visually-hidden">Форма обратной связи</legend>
+
+						<label for="name" class="visually-hidden">Как вас зовут?</label>
+						<input type="text" id="name" name="name" placeholder="Как вас зовут?">
+
+						<label for="feedback_email" class="visually-hidden">Ваша почта для ответа</label>
+						<input type="email" id="feedback_email" name="feedback_email" placeholder="Ваша почта для ответа">
+
+						<textarea id="comment" name="comment" rows="5" cols="100" placeholder="Напишите что-нибудь..." aria-label="Форма для комментария: напишите что-нибудь..."></textarea> 
+
+						<button type="submit" class="btn_standart">Отправить</button>
+
+					</fieldset>
 				</form>
 			</div>
-
 
 		</section>
 
@@ -228,10 +258,10 @@
 	<footer class="footer_container">
 
 		<ul class="social_list">
-			<li class="social social_tw"><a href="http://twitter.com/#"></a></li>
-			<li class="social social_ins"><a href="http://www.instagramm.com/#"></a></li>
-			<li class="social social_fb"><a href="http://www.facebook.com/#"></a></li>
-			<li class="social social_vk"><a href="http://vk.com/#"></a></li>
+			<li class="social social_tw"><a href="http://twitter.com/#">Твиттер</a></li>
+			<li class="social social_ins"><a href="http://www.instagramm.com/#">Инстаграмм</a></li>
+			<li class="social social_fb"><a href="http://www.facebook.com/#">Фэйсбук</a></li>
+			<li class="social social_vk"><a href="http://vk.com/#">Вконтакте</a></li>
 		</ul>
 
 		<ul class="footer_navigation">
@@ -242,7 +272,7 @@
 		</ul>
 
 		<div class="site_author">
-			<a href="#">
+			<a href="#" aria-label="Переход на сайт HTML Academy">
 				<img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
 			</a>
 			<p>Сделано в HTML Academy © 2017</p>
