@@ -38,39 +38,31 @@
 
 				<li class="search_element">
 					<a href="#">Поиск</a>
-					<div class="search_form">
-						<form action="#" method="post">
-							<label for="search" class="visually-hidden">Поиск по сайту</label>
-							<input type="search" id="search" name="search" placeholder="Что ищем?">
-						</form>
-					</div>
+					<form class="search_form" action="https://echo.htmlacademy.ru" method="post">
+						<label for="search" class="visually-hidden">Поиск по сайту</label>
+						<input type="search" id="search" name="search" placeholder="Что ищем?">
+					</form>
 				</li>
 
-				<li class="enter_element">
+				<li class="authorization_element">
 					<a href="#">Вход</a>
-					<div class="authorization_form">
+					<form class="authorization_form" action="https://echo.htmlacademy.ru" method="post">
+						<legend class="visually-hidden">Форма входа</legend>
 
-						<form action="#" method="post">
-							<fieldset class="authorization">
-								<legend class="visually-hidden">Форма входа</legend>
+						<label for="authorization_email" class="visually-hidden">Электронная почта</label>
+						<input type="email" id="authorization_email" name="authorization_email" placeholder="Электронная почта">
 
-								<label for="authorization_email" class="visually-hidden">Электронная почта</label>
-								<input type="email" id="authorization_email" name="authorization_email" placeholder="Электронная почта">
+						<label for="password" class="visually-hidden">Пароль</label>
+						<input type="password" id="password" name="password" placeholder="Пароль">
 
-								<label for="password" class="visually-hidden">Пароль</label>
-								<input type="password" id="password" name="password" placeholder="Пароль">
+						<button type="submit" class="btn_standart">Войти</button>
+					</form>
 
-								<button type="submit" class="btn_standart">Войти</button>
-
-							</fieldset>
-						</form>
-
-						<div class="help_links">
-							<a href="#">Забыли пароль?</a>
-							<a href="#">Новая регистрация</a>
-						</div>
-
+					<div class="help_links">
+						<a href="#">Забыли пароль?</a>
+						<a href="#">Новая регистрация</a>
 					</div>
+
 				</li>
 
 				<li class="basket_element"><a href="#" aria-label="Корзина покупок">Пусто</a></li>
@@ -141,39 +133,39 @@
 			<ul class="hits_list">
 
 				<li class="item_card hits_product"> 
-					<a href="#" aria-label="Первый хит:">
+					<a href="#">
 						<img src="img/hit1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 						<p class="item_price"><span class="rate">310</span><span class="ruble">рублей</span>/кг</p>
 						<h3 class="item_title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
 					</a>
-					<button type="button" class="btn_standart">Быстрый просмотр</button>
+					<a class="btn_standart">Быстрый просмотр</a>
 				</li>
 
 				<li class="item_card hits_product"> 
-					<a href="#" aria-label="Второй хит:">
+					<a href="#">
 						<img src="img/hit2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
 						<p class="item_price"><span class="rate">380</span><span class="ruble">рублей</span>/кг</p>
 						<h3 class="item_title">Сливочно-кофейное с кусочками шоколада</h3>
 					</a>
-					<button type="button" class="btn_standart">Быстрый просмотр</button>
+					<a class="btn_standart">Быстрый просмотр</a>
 				</li>
 
 				<li class="item_card hits_product"> 
-					<a href="#" aria-label="Третий хит:">
+					<a href="#">
 						<img src="img/hit3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 						<p class="item_price"><span class="rate">355</span><span class="ruble">рублей</span>/кг</p>
 						<h3 class="item_title">Сливочно-клубничное с присыпкой из белого шоколада</h3>
 					</a>
-					<button type="button" class="btn_standart">Быстрый просмотр</button>
+					<a class="btn_standart">Быстрый просмотр</a>
 				</li>
 
 				<li class="item_card hits_product"> 
-					<a href="#" aria-label="Четвертый хит:">
+					<a href="#">
 						<img src="img/hit4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
 						<p class="item_price"><span class="rate">415</span><span class="ruble">рублей</span>/кг</p>
 						<h3 class="item_title">Сливочное крем-брюле с карамельной подливкой</h3>
 					</a>
-					<button type="button" class="btn_standart">Быстрый просмотр</button>
+					<a class="btn_standart">Быстрый просмотр</a>
 				</li>
 
 			</ul>
@@ -203,7 +195,7 @@
 			<div class="mailing">
 				<h3 class="visually_hidden">Рассылка</h3>
 				<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-				<form class="mailing_form" action="#" method="post">
+				<form class="mailing_form" action="https://echo.htmlacademy.ru" method="post">
 					<label for="mailing_email" class="visually-hidden">Электронная почта</label>
 					<input type="email" id="mailing_email" name="mailing_email" placeholder="Электронная почта">
 					<button type="submit" class="btn standart">Отправить</button>
@@ -212,7 +204,7 @@
 
 		</section>
 
-		<section class="map_adress">
+		<section class="map_address">
 
 			<h2 class="visually_hidden">Карта и контакты</h2>
 
@@ -227,27 +219,24 @@
 				<p>Для заказов по телефону:</p>
 				<p class="main_phone">8 812 450-25-25</p>
 				<p>(с 10 до 20 ежедневно)</p>
-				<button type="button" class="btn_standart">Форма обратной связи</button>>
+				<a class="btn_standart">Форма обратной связи</a>
 			</div>
 
-			<div class="feedback_form">
+			<div class="feedback">
 				<p>Мы обязательно вам ответим!</p>
 
-				<form action="#" method="post">
-					<fieldset class="feedback">
-						<legend class="visually-hidden">Форма обратной связи</legend>
+				<form class="feedback_form" action="https://echo.htmlacademy.ru" method="post">
 
-						<label for="name" class="visually-hidden">Как вас зовут?</label>
-						<input type="text" id="name" name="name" placeholder="Как вас зовут?">
+					<label for="name" class="visually-hidden">Как вас зовут?</label>
+					<input type="text" id="name" name="name" placeholder="Как вас зовут?">
 
-						<label for="feedback_email" class="visually-hidden">Ваша почта для ответа</label>
-						<input type="email" id="feedback_email" name="feedback_email" placeholder="Ваша почта для ответа">
+					<label for="feedback_email" class="visually-hidden">Ваша почта для ответа</label>
+					<input type="email" id="feedback_email" name="feedback_email" placeholder="Ваша почта для ответа">
 
-						<textarea id="comment" name="comment" rows="5" cols="100" placeholder="Напишите что-нибудь..." aria-label="Форма для комментария: напишите что-нибудь..."></textarea> 
+					<textarea id="comment" name="comment" rows="5" cols="100" placeholder="Напишите что-нибудь..." aria-label="Форма для комментария"></textarea> 
 
-						<button type="submit" class="btn_standart">Отправить</button>
+					<button type="submit" class="btn_standart">Отправить</button>
 
-					</fieldset>
 				</form>
 			</div>
 
@@ -271,7 +260,7 @@
 			<li><a href="#">Экологические стандарты</a></li>
 		</ul>
 
-		<div class="site_author">
+		<div class="footer_copyright">
 			<a href="#" aria-label="Переход на сайт HTML Academy">
 				<img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
 			</a>
