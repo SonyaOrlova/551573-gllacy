@@ -30,7 +30,7 @@
 				</li>
 
 				<li><a href="#">Доставка и оплата</a></li>
-				<li><a href="#company">О компании</a></li>
+				<li><a href="#">О компании</a></li>
 
 			</ul>
 
@@ -55,13 +55,12 @@
 						<input type="password" id="password" name="password" placeholder="Пароль">
 
 						<button type="submit" class="btn_standart">Войти</button>
+
+						<div class="help_links">
+							<a href="#">Забыли пароль?</a>
+							<a href="#">Новая регистрация</a>
+						</div>
 					</form>
-
-					<div class="help_links">
-						<a href="#">Забыли пароль?</a>
-						<a href="#">Новая регистрация</a>
-					</div>
-
 				</li>
 
 				<li class="basket_element"><a href="#" aria-label="Корзина покупок">Пусто</a></li>
@@ -81,15 +80,10 @@
 
 		<div class="slider">
 
-<!-- 		<input type="radio" id="radio_btn_1" name="rad">
-				<input type="radio" id="radio_btn_2" name="rad">
-				<input type="radio" id="radio_btn_3" name="rad">
-			-->
-
 			<div class="slider_controls">
-				<label  for="slider_btn_1">Посмотреть слайд 1</label>
-				<label  for="slider_btn_2">Посмотреть слайд 2</label>
-				<label  for="slider_btn_3">Посмотреть слайд 3</label>
+				<button type="button" class="slide_btn" aria-label="Посмотреть слайд 1"></button>
+				<button type="button" class="slide_btn" aria-label="Посмотреть слайд 2"></button>
+				<button type="button" class="slide_btn" aria-label="Посмотреть слайд 3"></button>
 			</div>
 
 			<div class="slide slide_1">
@@ -171,14 +165,13 @@
 			
 		</section>
 
-		<article class="company" id="company">
-			<!--id добавила для якоря к ссылке навигации "О комании" в header-->
+		<article class="company">
 			<h1 class="company_description">Магазин Глейси  — это онлайн- и оффлайн-магазин по продаже мороженного собственного производства на развес</h1>
 			<ul class="company_features">
-				<li class="feature_1"><p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p></li>
-				<li class="feature_2"><p>Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p></li>
-				<li class="feature_3"><p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p></li>
-				<li class="feature_4"><p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p></li>
+				<li class="feature_1">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+				<li class="feature_2">Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+				<li class="feature_3">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+				<li class="feature_4">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
 			</ul>
 		</article>
 		
@@ -197,7 +190,7 @@
 				<form class="mailing_form" action="https://echo.htmlacademy.ru" method="post">
 					<label for="mailing_email" class="visually-hidden">Электронная почта</label>
 					<input type="email" id="mailing_email" name="mailing_email" placeholder="Электронная почта">
-					<button type="submit" class="btn standart">Отправить</button>
+					<button type="submit" class="btn_standart">Отправить</button>
 				</form>
 			</div>
 
@@ -216,9 +209,9 @@
 				<p>Адрес главного офиса и офлайн-магазина:</p>
 				<address>ул. Большая Конюшенная 19/8, Санкт-Петербург</address>
 				<p>Для заказов по телефону:</p>
-				<p class="main_phone">8 812 450-25-25</p>
+				<a class="main_phone" href="tel:88124502525" aria-label="Номер телефона:">8 812 450-25-25</a>
 				<p>(с 10 до 20 ежедневно)</p>
-				<a class="btn_standart">Форма обратной связи</a>
+				<a class="btn_standart" href="#">Форма обратной связи</a>
 			</div>
 
 			<div class="feedback">
@@ -232,7 +225,8 @@
 					<label for="feedback_email" class="visually-hidden">Ваша почта для ответа</label>
 					<input type="email" id="feedback_email" name="feedback_email" placeholder="Ваша почта для ответа">
 
-					<textarea id="comment" name="comment" rows="5" cols="100" placeholder="Напишите что-нибудь..." aria-label="Форма для комментария"></textarea> 
+					<label for="feedback_email" class="visually-hidden">Форма для комментария</label>
+					<textarea id="comment" name="comment" rows="5" cols="100" placeholder="Напишите что-нибудь..."></textarea> 
 
 					<button type="submit" class="btn_standart">Отправить</button>
 
@@ -246,10 +240,10 @@
 	<footer class="footer_container">
 
 		<ul class="social_list">
-			<li class="social social_tw"><a href="http://twitter.com/#">Твиттер</a></li>
-			<li class="social social_ins"><a href="http://www.instagramm.com/#">Инстаграмм</a></li>
-			<li class="social social_fb"><a href="http://www.facebook.com/#">Фэйсбук</a></li>
-			<li class="social social_vk"><a href="http://vk.com/#">Вконтакте</a></li>
+			<li class="social social_tw"><a href="http://twitter.com/#" aria-label="Twitter"></a></li>
+			<li class="social social_ins"><a href="http://www.instagramm.com/#" aria-label="Instagramm"></a></li>
+			<li class="social social_fb"><a href="http://www.facebook.com/#" aria-label="Facebook"></a></li>
+			<li class="social social_vk"><a href="http://vk.com/#" aria-label="Vkontakte"></a></li>
 		</ul>
 
 		<ul class="footer_navigation">

@@ -56,13 +56,12 @@
 						<input type="password" id="password" name="password" placeholder="Пароль">
 
 						<button type="submit" class="btn_standart">Войти</button>
+
+						<div class="help_links">
+							<a href="#">Забыли пароль?</a>
+							<a href="#">Новая регистрация</a>
+						</div>
 					</form>
-
-					<div class="help_links">
-						<a href="#">Забыли пароль?</a>
-						<a href="#">Новая регистрация</a>
-					</div>
-
 				</li>
 
 				<li class="basket_element">
@@ -126,26 +125,52 @@
 					</select>
 				</fieldset>
 
-				<div class="price_range">
+				<div class="price_filter">
 					<p>Цена: 100 руб. - 500 руб.</p>
-					<!--Пока не заполняю-->
+					<div class="range_controls">
+						<div class="bar"></div>
+						<span class="btn_range btn_range_min" tabindex="0"></span>
+						<span class="btn_range btn_range_max" tabindex="0"></span>
+					</div>
 				</div>
 
 				<fieldset class="fatness_filter">
+
 					<legend>Жирность:</legend>
-					<input type="radio" id="fat_1" name="fatness">0%
-					<input type="radio" id="fat_2" name="fatness" checked>до 10%
-					<input type="radio" id="fat_3" name="fatness">до 30%
-					<input type="radio" id="fat_4" name="fatness">выше 30%
+
+					<label for="fat_1">0%</label>
+					<input type="radio" id="fat_1" name="fatness">
+
+					<label for="fat_2">до 10%</label>
+					<input type="radio" id="fat_2" name="fatness" checked>
+
+					<label for="fat_3">до 30%</label>
+					<input type="radio" id="fat_3" name="fatness">
+
+					<label for="fat_4">выше 30%</label>
+					<input type="radio" id="fat_4" name="fatness">
+
 				</fieldset>
 
 				<fieldset class="filler_filter">
+
 					<legend>Наполнители:</legend>
-					<input type="checkbox" id="fil_1" name="filler" checked>шоколадные
-					<input type="checkbox" id="fil_2" name="filler" checked>сахарные присыпки 
-					<input type="checkbox" id="fil_3" name="filler">фрукты 
-					<input type="checkbox" id="fil_4" name="filler">сиропы
-					<input type="checkbox" id="fil_5" name="filler">джемы
+					
+					<label for="fil_1">шоколадные</label>
+					<input type="checkbox" id="fil_1" name="filler" checked>
+
+					<label for="fil_2">сахарные присыпки</label>
+					<input type="checkbox" id="fil_2" name="filler" checked>
+
+					<label for="fil_3">фрукты </label> 
+					<input type="checkbox" id="fil_3" name="filler">
+
+					<label for="fil_4">сиропы</label>
+					<input type="checkbox" id="fil_4" name="filler">
+
+					<label for="fil_5">джемы</label>
+					<input type="checkbox" id="fil_5" name="filler">
+
 				</fieldset>
 
 				<button type="submit" class="btn_filter">Применить</button>
@@ -163,7 +188,7 @@
 				<li class="item_card"> 
 					<a href="#">
 						<img src="img/hit1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-						<p class="item_price"><span class="rate">310</span><span class="ruble">рублей</span>/кг</p>
+						<p class="item_price"><span class="rate">310</span><span class="ruble" aria-label="рублей"></span>/кг</p>
 						<h3 class="item_title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
 					</a>
 					<a class="btn_standart">Быстрый просмотр</a>
@@ -172,7 +197,7 @@
 				<li class="item_card"> 
 					<a href="#">
 						<img src="img/hit2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-						<p class="item_price"><span class="rate">380</span><span class="ruble">рублей</span>/кг</p>
+						<p class="item_price"><span class="rate">380</span><span class="ruble" aria-label="рублей"></span>/кг</p>
 						<h3 class="item_title">Сливочно-кофейное с кусочками шоколада</h3>
 					</a>
 					<a class="btn_standart">Быстрый просмотр</a>
@@ -181,7 +206,7 @@
 				<li class="item_card"> 
 					<a href="#">
 						<img src="img/hit3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-						<p class="item_price"><span class="rate">355</span><span class="ruble">рублей</span>/кг</p>
+						<p class="item_price"><span class="rate">355</span><span class="ruble" aria-label="рублей"></span>/кг</p>
 						<h3 class="item_title">Сливочно-клубничное с присыпкой из белого шоколада</h3>
 					</a>
 					<a class="btn_standart">Быстрый просмотр</a>
@@ -190,7 +215,7 @@
 				<li class="item_card"> 
 					<a href="#">
 						<img src="img/hit4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-						<p class="item_price"><span class="rate">415</span><span class="ruble">рублей</span>/кг</p>
+						<p class="item_price"><span class="rate">415</span><span class="ruble" aria-label="рублей"></span>/кг</p>
 						<h3 class="item_title">Сливочное крем-брюле с карамельной подливкой</h3>
 					</a>
 					<a class="btn_standart">Быстрый просмотр</a>
@@ -199,7 +224,7 @@
 				<li class="item_card"> 
 					<a href="#">
 						<img src="img/item5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
-						<p class="item_price"><span class="rate">325</span><span class="ruble">рублей</span>/кг</p>
+						<p class="item_price"><span class="rate">325</span><span class="ruble" aria-label="рублей"></span>/кг</p>
 						<h3 class="item_title">Сливочное с брусничным джемом</h3>
 					</a>
 					<a class="btn_standart">Быстрый просмотр</a>
@@ -208,7 +233,7 @@
 				<li class="item_card"> 
 					<a href="#">
 						<img src="img/item6.jpg" width="267" height="267" alt="Cливочно-черничное с цельными ягодами черники">
-						<p class="item_price"><span class="rate">410</span><span class="ruble">рублей</span>/кг</p>
+						<p class="item_price"><span class="rate">410</span><span class="ruble" aria-label="рублей"></span>/кг</p>
 						<h3 class="item_title">Cливочно-черничное с цельными ягодами черники</h3>
 					</a>
 					<a class="btn_standart">Быстрый просмотр</a>
@@ -217,7 +242,7 @@
 				<li class="item_card"> 
 					<a href="#">
 						<img src="img/item7.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
-						<p class="item_price"><span class="rate">375</span><span class="ruble">рублей</span>/кг</p>
+						<p class="item_price"><span class="rate">375</span><span class="ruble" aria-label="рублей"></span>/кг</p>
 						<h3 class="item_title">Cливочно-лимонное с карамельной присыпкой</h3>
 					</a>
 					<a class="btn_standart">Быстрый просмотр</a>
@@ -226,7 +251,7 @@
 				<li class="item_card"> 
 					<a href="#">
 						<img src="img/item8.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
-						<p class="item_price"><span class="rate">320</span><span class="ruble">рублей</span>/кг</p>
+						<p class="item_price"><span class="rate">320</span><span class="ruble" aria-label="рублей"></span>/кг</p>
 						<h3 class="item_title">Сливочное с шоколадной стружкой</h3>
 					</a>
 					<a class="btn_standart">Быстрый просмотр</a>
@@ -235,7 +260,7 @@
 				<li class="item_card"> 
 					<a href="#">
 						<img src="img/item9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
-						<p class="item_price"><span class="rate">440</span><span class="ruble">рублей</span>/кг</p>
+						<p class="item_price"><span class="rate">440</span><span class="ruble" aria-label="рублей"></span>/кг</p>
 						<h3 class="item_title">Сливочно-ванильное с кусочками шоколада</h3>
 					</a>
 					<a class="btn_standart">Быстрый просмотр</a>
@@ -244,7 +269,7 @@
 				<li class="item_card"> 
 					<a href="#">
 						<img src="img/item10.jpg" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
-						<p class="item_price"><span class="rate">435</span><span class="ruble">рублей</span>/кг</p>
+						<p class="item_price"><span class="rate">435</span><span class="ruble" aria-label="рублей"></span>/кг</p>
 						<h3 class="item_title">Сливочноe с ментоловым сиропом</h3>
 					</a>
 					<a class="btn_standart">Быстрый просмотр</a>
@@ -253,7 +278,7 @@
 				<li class="item_card"> 
 					<a href="#">
 						<img src="img/item11.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
-						<p class="item_price"><span class="rate">355</span><span class="ruble">рублей</span>/кг</p>
+						<p class="item_price"><span class="rate">355</span><span class="ruble" aria-label="рублей"></span>/кг</p>
 						<h3 class="item_title">Сливочное с кусочками черного шоколада</h3>
 					</a>
 					<a class="btn_standart">Быстрый просмотр</a>
@@ -262,7 +287,7 @@
 				<li class="item_card"> 
 					<a href="#">
 						<img src="img/item12.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
-						<p class="item_price"><span class="rate">420</span><span class="ruble">рублей</span>/кг</p>
+						<p class="item_price"><span class="rate">420</span><span class="ruble" aria-label="рублей"></span>/кг</p>
 						<h3 class="item_title">Сливочное с мятным сиропом</h3>
 					</a>
 					<a class="btn_standart">Быстрый просмотр</a>
@@ -273,13 +298,13 @@
 		</section>
 
 		<ul class="pagination-list">
-			<li class="pagination-item prev"><a class="disabled" href="#prev">Предыдущая страница</a></li>
+			<li class="pagination-item prev"><a class="disabled" href="#prev" aria-label="Предыдущая страница"></a></li>
 			<li class="pagination-item current">1</li>
 			<li class="pagination-item"><a href="#2">2</a></li>
 			<li class="pagination-item"><a href="#3">3</a></li>
 			<li class="pagination-item"><a href="#4">4</a></li>
 			<li class="pagination-item"><a href="#5">5</a></li>
-			<li class="pagination-item next"><a href="#next">Следующая страница</a></li>
+			<li class="pagination-item next"><a href="#next" aria-label="Следующая страница"></a></li>
 		</ul>
 
 	</main>
@@ -287,10 +312,10 @@
 	<footer class="footer_container">
 
 		<ul class="social_list">
-			<li class="social social_tw"><a href="http://twitter.com/#">Твиттер</a></li>
-			<li class="social social_ins"><a href="http://www.instagramm.com/#">Инстаграмм</a></li>
-			<li class="social social_fb"><a href="http://www.facebook.com/#">Фэйсбук</a></li>
-			<li class="social social_vk"><a href="http://vk.com/#">Вконтакте</a></li>
+			<li class="social social_tw"><a href="http://twitter.com/#" aria-label="Twitter"></a></li>
+			<li class="social social_ins"><a href="http://www.instagramm.com/#" aria-label="Instagramm"></a></li>
+			<li class="social social_fb"><a href="http://www.facebook.com/#" aria-label="Facebook"></a></li>
+			<li class="social social_vk"><a href="http://vk.com/#" aria-label="Vkontakte"></a></li>
 		</ul>
 
 		<ul class="footer_navigation">
