@@ -21,34 +21,34 @@
 
 			<ul class="header_site_navigation">
 
-				<li> 
+				<li class="header_site_navigation_element"> 
 					<a href="#">Каталог</a>
 					<ul class="sub_menu">
-						<li class="new_items"><a href="#">Новинки</a></li>
-						<li><a class="active" href="catalog.html">Сливочные</a></li>
-						<li><a href="#">Щербеты</a></li>
-						<li><a href="#">Фруктовый лед</a></li>
-						<li><a href="#">Мелорин</a></li>
+						<li class="sub_menu_element new_items"><a href="#">Новинки</a></li>
+						<li class="sub_menu_element"><a class="active" href="catalog.html">Сливочные</a></li>
+						<li class="sub_menu_element"><a href="#">Щербеты</a></li>
+						<li class="sub_menu_element"><a href="#">Фруктовый лед</a></li>
+						<li class="sub_menu_element"><a href="#">Мелорин</a></li>
 					</ul>
 				</li>
 
-				<li><a href="#">Доставка и оплата</a></li>
-				<li><a href="#company">О компании</a></li>
+				<li class="header_site_navigation_element"><a href="#">Доставка и оплата</a></li>
+				<li class="header_site_navigation_element"><a href="#company">О компании</a></li>
 
 			</ul>
 
 			<ul class="header_user_navigation">
 
-				<li class="search_element">
-					<a class="header_user_name_element" href="#" aria-label="Поиск по сайту"></a>
+				<li class="header_user_navigation_element search_element">
+					<a href="#" aria-label="Поиск по сайту"></a>
 					<form class="search_form" action="https://echo.htmlacademy.ru" method="post">
 						<label for="search" class="visually_hidden">Поиск по сайту</label>
 						<input type="search" id="search" name="search" placeholder="Что ищем?">
 					</form>
 				</li>
 
-				<li class="authorization_element">
-					<a class="header_user_name_element" href="#">Вход</a>
+				<li class="header_user_navigation_element authorization_element">
+					<a href="#">Вход</a>
 					<form class="authorization_form" action="https://echo.htmlacademy.ru" method="post">
 
 						<label for="authorization_email" class="visually_hidden">Электронная почта</label>
@@ -66,8 +66,8 @@
 					</form>
 				</li>
 
-				<li class="basket_element">
-					<a class="header_user_name_element full_basket" href="#" aria-label="Корзина покупок">2 товара</a>
+				<li class="header_user_navigation_element basket_element">
+					<a class="full_basket" href="#" aria-label="Корзина покупок">2 товара</a>
 					<div class="basket_card">
 						<table class="basket_list">
 							<tr class="basket_item_1">
@@ -104,9 +104,9 @@
 	<main class="main_container">
 		
 		<ul class="breadcrumbs">
-			<li><a href="index.html">Главная</a></li>
-			<li><a href="catalog.html">Каталог</a></li>
-			<li class="breadcrumbs_current">Сливочное</li>
+			<li class="breadcrumbs_page"><a href="index.html">Главная</a></li>
+			<li class="breadcrumbs_page"><a href="catalog.html">Каталог</a></li>
+			<li class="breadcrumbs_page breadcrumbs_page_current">Сливочное</li>
 		</ul>
 
 		<h1 class="creamy_page_name">Сливочное мороженое</h1>
@@ -319,13 +319,13 @@
 		</section>
 
 		<ul class="pagination_list">
-			<li class="prev"><a class="disabled" href="#prev" aria-label="Предыдущая страница"></a></li>
-			<li class="pagination_item current">1</li>
+			<li class="pagination_page_prev"><a class="disabled" href="#prev" aria-label="Предыдущая страница"></a></li>
+			<li class="pagination_item pagination_page_current">1</li>
 			<li class="pagination_item"><a href="#2">2</a></li>
 			<li class="pagination_item"><a href="#3">3</a></li>
 			<li class="pagination_item"><a href="#4">4</a></li>
 			<li class="pagination_item"><a href="#5">5</a></li>
-			<li class="next"><a href="#next" aria-label="Следующая страница"></a></li>
+			<li class="pagination_page_next"><a href="#next" aria-label="Следующая страница"></a></li>
 		</ul>
 
 	</main>
@@ -333,17 +333,17 @@
 	<footer class="footer_container">
 
 		<ul class="social_list">
-			<li><a class="social social_tw" href="#" aria-label="Twitter"></a></li>
-			<li><a class="social social_inst" href="#" aria-label="Instagram"></a></li>
-			<li><a class="social social_fb" href="#" aria-label="Facebook"></a></li>
-			<li><a class="social social_vk" href="#" aria-label="Vkontakte"></a></li>
+			<li><a class="social_link social_tw" href="#" aria-label="Twitter"></a></li>
+			<li><a class="social_link social_inst" href="#" aria-label="Instagram"></a></li>
+			<li><a class="social_link social_fb" href="#" aria-label="Facebook"></a></li>
+			<li><a class="social_link social_vk" href="#" aria-label="Vkontakte"></a></li>
 		</ul>
 
 		<ul class="footer_navigation">
-			<li><a class="footer_navigation_marked" href="#">Для поставщиков</a></li>
-			<li><a href="#">О производстве</a></li>
-			<li><a href="#">Наши документы</a></li>
-			<li><a href="#">Экологические стандарты</a></li>
+			<li class="footer_navigation_element"><a class="footer_navigation_marked" href="#">Для поставщиков</a></li>
+			<li class="footer_navigation_element"><a href="#">О производстве</a></li>
+			<li class="footer_navigation_element"><a href="#">Наши документы</a></li>
+			<li class="footer_navigation_element"><a href="#">Экологические стандарты</a></li>
 		</ul>
 
 		<div class="footer_copyright">
