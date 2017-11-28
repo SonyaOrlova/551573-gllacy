@@ -28,13 +28,15 @@
 
 						<li class="header_site_navigation_element catalog_nav_element"> 
 							<a href="#">Каталог</a>
-							<ul class="sub_menu">
-								<li class="sub_menu_element new_items"><a href="#">Новинки</a></li>
-								<li class="sub_menu_element"><a href="catalog.html">Сливочное</a></li>
-								<li class="sub_menu_element"><a class="active">Щербеты</a></li>
-								<li class="sub_menu_element"><a href="#">Фруктовый лед</a></li>
-								<li class="sub_menu_element"><a href="#">Мелорин</a></li>
-							</ul>
+							<div class="sub_menu_wrapper">
+								<ul class="sub_menu">
+									<li class="sub_menu_element new_items"><a href="#">Новинки</a></li>
+									<li class="sub_menu_element"><a href="catalog.html">Сливочное</a></li>
+									<li class="sub_menu_element"><a class="active">Щербеты</a></li>
+									<li class="sub_menu_element"><a href="#">Фруктовый лед</a></li>
+									<li class="sub_menu_element"><a href="#">Мелорин</a></li>
+								</ul>
+							</div>
 						</li>
 
 						<li class="header_site_navigation_element"><a href="#">Доставка и оплата</a></li>
@@ -46,29 +48,33 @@
 
 						<li class="header_user_navigation_element search_element">
 							<a href="#" aria-label="Поиск по сайту"></a>
-							<form class="search_form" action="https://echo.htmlacademy.ru" method="post">
-								<label for="search" class="visually_hidden">Поиск по сайту</label>
-								<input type="search" id="search" name="search" placeholder="Что ищем?">
-							</form>
+							<div class="search_form_wrapper">
+								<form class="search_form" action="https://echo.htmlacademy.ru" method="post">
+									<label for="search" class="visually_hidden">Поиск по сайту</label>
+									<input type="search" id="search" name="search" placeholder="Что ищем?">
+								</form>
+							</div>
 						</li>
 
 						<li class="header_user_navigation_element authorization_element">
 							<a href="#">Вход</a>
-							<form class="authorization_form" action="https://echo.htmlacademy.ru" method="post">
+							<div class="authorization_form_wrapper">
+								<form class="authorization_form" action="https://echo.htmlacademy.ru" method="post">
 
-								<label for="authorization_email" class="visually_hidden">Электронная почта</label>
-								<input type="email" id="authorization_email" name="authorization_email" placeholder="Электронная почта">
+									<label for="authorization_email" class="visually_hidden">Электронная почта</label>
+									<input type="email" id="authorization_email" name="authorization_email" placeholder="Электронная почта">
 
-								<label for="password" class="visually_hidden">Пароль</label>
-								<input type="password" id="password" name="password" placeholder="Пароль">
+									<label for="password" class="visually_hidden">Пароль</label>
+									<input type="password" id="password" name="password" placeholder="Пароль">
 
-								<button type="submit" class="btn_standart">Войти</button>
+									<button type="submit" class="btn_standart">Войти</button>
 
-								<div class="help_links">
-									<a href="#">Забыли пароль?</a>
-									<a href="#">Новая регистрация</a>
-								</div>
-							</form>
+									<div class="help_links">
+										<a href="#">Забыли пароль?</a>
+										<a href="#">Новая регистрация</a>
+									</div>
+								</form>
+							</div>
 						</li>
 
 						<li class="header_user_navigation_element basket_element">
@@ -218,7 +224,9 @@
 
 				<h2 class="visually_hidden">Карта и контакты</h2>
 
-				<div class="map_canvas" label-area="Адрес магазина на карте: ул. Большая Конюшенная 19/8, Санкт-Петербург"></div>
+				<div class="map_canvas"> 
+					<p class="visually_hidden"> Адрес магазина на карте: ул. Большая Конюшенная 19/8, Санкт-Петербург"</p>
+				</div>
 
 				<div class="main_contacts">
 					<p>Адрес главного офиса и офлайн-магазина:</p>
@@ -232,7 +240,7 @@
 				<form class="feedback_form" action="https://echo.htmlacademy.ru" method="post">
 					<p>Мы обязательно вам ответим!</p>
 
-					<button type="button" class="btn_close" aria-label="Закрыть"></button></td>
+					<button type="button" class="btn_close" aria-label="Закрыть"></button>
 
 					<label for="name" class="visually_hidden">Как вас зовут?</label>
 					<input type="text" id="name" name="name" placeholder="Как вас зовут?">

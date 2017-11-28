@@ -24,13 +24,15 @@
 
 					<li class="header_site_navigation_element catalog_nav_element"> 
 						<a class="header_catalog_link_active" href="#">Каталог</a>
-						<ul class="sub_menu">
-							<li class="sub_menu_element new_items"><a href="#">Новинки</a></li>
-							<li class="sub_menu_element"><a class="active">Сливочное</a></li>
-							<li class="sub_menu_element"><a href="index.html">Щербеты</a></li>
-							<li class="sub_menu_element"><a href="#">Фруктовый лед</a></li>
-							<li class="sub_menu_element"><a href="#">Мелорин</a></li>
-						</ul>
+						<div class="sub_menu_wrapper">
+							<ul class="sub_menu">
+								<li class="sub_menu_element new_items"><a href="#">Новинки</a></li>
+								<li class="sub_menu_element"><a class="active">Сливочное</a></li>
+								<li class="sub_menu_element"><a href="index.html">Щербеты</a></li>
+								<li class="sub_menu_element"><a href="#">Фруктовый лед</a></li>
+								<li class="sub_menu_element"><a href="#">Мелорин</a></li>
+							</ul>
+						</div>
 					</li>
 
 					<li class="header_site_navigation_element"><a href="#">Доставка и оплата</a></li>
@@ -42,52 +44,58 @@
 
 					<li class="header_user_navigation_element search_element">
 						<a href="#" aria-label="Поиск по сайту"></a>
-						<form class="search_form" action="https://echo.htmlacademy.ru" method="post">
-							<label for="search" class="visually_hidden">Поиск по сайту</label>
-							<input type="search" id="search" name="search" placeholder="Что ищем?">
-						</form>
+						<div class="search_form_wrapper">
+							<form class="search_form" action="https://echo.htmlacademy.ru" method="post">
+								<label for="search" class="visually_hidden">Поиск по сайту</label>
+								<input type="search" id="search" name="search" placeholder="Что ищем?">
+							</form>
+						</div>
 					</li>
 
 					<li class="header_user_navigation_element authorization_element">
 						<a href="#">Вход</a>
-						<form class="authorization_form" action="https://echo.htmlacademy.ru" method="post">
+						<div class="authorization_form_wrapper">
+							<form class="authorization_form" action="https://echo.htmlacademy.ru" method="post">
 
-							<label for="authorization_email" class="visually_hidden">Электронная почта</label>
-							<input type="email" id="authorization_email" name="authorization_email" placeholder="Электронная почта">
+								<label for="authorization_email" class="visually_hidden">Электронная почта</label>
+								<input type="email" id="authorization_email" name="authorization_email" placeholder="Электронная почта">
 
-							<label for="password" class="visually_hidden">Пароль</label>
-							<input type="password" id="password" name="password" placeholder="Пароль">
+								<label for="password" class="visually_hidden">Пароль</label>
+								<input type="password" id="password" name="password" placeholder="Пароль">
 
-							<button type="submit" class="btn_standart">Войти</button>
+								<button type="submit" class="btn_standart">Войти</button>
 
-							<div class="help_links">
-								<a href="#">Забыли пароль?</a>
-								<a href="#">Новая регистрация</a>
-							</div>
-						</form>
+								<div class="help_links">
+									<a href="#">Забыли пароль?</a>
+									<a href="#">Новая регистрация</a>
+								</div>
+							</form>
+						</div>
 					</li>
 
 					<li class="header_user_navigation_element basket_element basket_element_full">
 						<a class="full_basket" href="#" aria-label="Корзина покупок">2 товара</a>
-						<div class="basket_card">
-							<table class="basket_list">
-								<tr class="basket_item_1">
-									<td class="basket_item_del"><button type="button" class="btn_delete" aria-label="Удалить"></button></td>
-									<td class="basket_item_img"></td>
-									<td class="basket_item_name">Пломбир с апельсиновым джемом</td>
-									<td class="basket_item_price">1,5 кг × <span>200 руб.</span></td>
-									<td class="basket_item_total">300 руб.</td>
-								</tr>
-								<tr class="basket_item_2">
-									<td class="basket_item_del"><button type="button" class="btn_delete" aria-label="Удалить"></button></td>
-									<td class="basket_item_img"></td>
-									<td class="basket_item_name">Клубничный пломбир с присыпкой из белого шоколада</td>
-									<td class="basket_item_price">1,5 кг × <span>300 руб.</span></td>
-									<td class="basket_item_total">450 руб.</td>
-								</tr>
-							</table>
-							<p> Итого: 750 руб. </p>
-							<a class="btn_standart" href="#">Оформить заказ</a>
+						<div class="basket_card_wrapper">
+							<div class="basket_card">
+								<table class="basket_list">
+									<tr class="basket_item_1">
+										<td class="basket_item_del"><button type="button" class="btn_delete" aria-label="Удалить"></button></td>
+										<td class="basket_item_img"></td>
+										<td class="basket_item_name">Пломбир с апельсиновым джемом</td>
+										<td class="basket_item_price">1,5 кг × <span>200 руб.</span></td>
+										<td class="basket_item_total">300 руб.</td>
+									</tr>
+									<tr class="basket_item_2">
+										<td class="basket_item_del"><button type="button" class="btn_delete" aria-label="Удалить"></button></td>
+										<td class="basket_item_img"></td>
+										<td class="basket_item_name">Клубничный пломбир с присыпкой из белого шоколада</td>
+										<td class="basket_item_price">1,5 кг × <span>300 руб.</span></td>
+										<td class="basket_item_total">450 руб.</td>
+									</tr>
+								</table>
+								<p> Итого: 750 руб. </p>
+								<a class="btn_standart" href="#">Оформить заказ</a>
+							</div>
 						</div>
 					</li>
 
