@@ -239,6 +239,7 @@
 
 				<div class="map_canvas"> 
 					<p class="visually_hidden"> Адрес магазина на карте: ул. Большая Конюшенная 19/8, Санкт-Петербург"</p>
+					<iframe src="https://yandex.ru/map-widget/v1/-/CBaC4LdT8B"></iframe>
 				</div>
 
 				<div class="main_contacts">
@@ -250,12 +251,14 @@
 					<a class="btn_standart feedback_opener" href="#">Форма обратной связи</a>
 				</div>
 
+				<div class="feedback_overlay"></div>
+
 				<form class="feedback_form" action="https://echo.htmlacademy.ru" method="post">
 					<p>Мы обязательно вам ответим!</p>
 
 					<button type="button" class="feedback_close" aria-label="Закрыть"></button>
 
-					<label for="name" class="visually_hidden">Как вас зовут?</label>
+					<label for="feedback_name" class="visually_hidden">Как вас зовут?</label>
 					<input type="text" id="feedback_name" name="feedback_name" placeholder="Как вас зовут?">
 
 					<label for="feedback_email" class="visually_hidden">Ваша почта для ответа?</label>
@@ -300,52 +303,7 @@
 		</footer>
 	</div>
 
-	<script>
-		var link = document.querySelector(".feedback_opener");
-		var popup = document.querySelector(".feedback_form");
-		var close = popup.querySelector(".feedback_close");
-		var username = popup.querySelector("[name=feedback_name]");
-		var email = popup.querySelector("[name=feedback_email]");
-		var comment = popup.querySelector("[name=feedback_comment]");
-		var storage_username = localStorage.getItem("username");
-		var storage_email = localStorage.getItem("email");
-		link.addEventListener("click", function (evt) {
-			evt.preventDefault();
-			popup.classList.add("feedback_show");
-			if (storage_username || storage_email) {
-				username.value = storage_username;
-				email.value = storage_email;
-				comment.focus();
-			} else {
-				username.focus();
-			}
-		});
-		close.addEventListener("click", function (evt) {
-			evt.preventDefault();
-			popup.classList.remove("feedback_show");
-			popup.classList.remove("feedback_error");
-		});
-		popup.addEventListener("submit", function (evt) {
-			if (!username.value || !email.value  || !comment.value) {
-				evt.preventDefault();
-				popup.classList.remove("feedback_error");
-				popup.offsetWidth = popup.offsetWidth;
-				popup.classList.add("feedback_error");
-			} else {
-				localStorage.setItem("username", username.value);
-				localStorage.setItem("email", email.value)
-			}
-		});
-
-		window.addEventListener("keydown", function (evt) {
-			if (evt.keyCode === 27) {
-				if (popup.classList.contains("feedback_show")) {
-					popup.classList.remove("feedback_show");
-					popup.classList.remove("feedback_error");
-				}
-			}
-		});
-	</script>
+	<script src="js/popup.js"></script>
 
 </body>
 </html>
